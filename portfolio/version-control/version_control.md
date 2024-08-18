@@ -9,7 +9,7 @@ This document explains the version control steps performed using Git and GitHub,
 - **Cloned the repository locally** to begin working on the project.
 
 ### Commands Used:
-- `git clone https://github.com/yourusername/portfolio.git`
+- `git clone https://github.com/28Sandeep07/portfolio.git`
   
   **Explanation:** This command creates a local copy of the GitHub repository, allowing you to work on it locally and sync changes with the remote repository.
 
@@ -90,13 +90,13 @@ This document explains the version control steps performed using Git and GitHub,
 
 ## 5. Summary of Git Commands
 
-- **`git clone`**: Copies a remote repository to your local machine.
+- **`git clone`**: Copies a remote repository to the local machine.
 - **`git add`**: Stages changes for the next commit.
-- **`git commit`**: Saves your staged changes to the repository with a message.
-- **`git push`**: Sends your committed changes to the remote repository.
+- **`git commit`**: Saves the staged changes to the repository with a message.
+- **`git push`**: Sends the committed changes to the remote repository.
 - **`git checkout -b`**: Creates and switches to a new branch.
 - **`git merge`**: Combines changes from one branch into another.
-- **`git pull`**: Updates your local repository with changes from the remote repository.
+- **`git pull`**: Updates my local repository with changes from the remote repository.
 
 ---
 
