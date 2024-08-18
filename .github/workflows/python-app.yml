@@ -14,4 +14,4 @@ jobs:
         python-version: '3.x'  # Specify the Python version (e.g., 3.12)
     - name: Run tests
       run: |
-        python portfolio/github\ actions/test_script.py  # Correct path with spaces escaped
+        python portfolio/github\ actions/test_script.py  # Path with spaces escaped
