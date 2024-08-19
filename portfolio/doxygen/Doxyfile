@@ -74,11 +74,11 @@ PROJECT_ICON           =
 # entered, it will be relative to the location where Doxygen was started. If
 # left blank the current directory will be used.
 
-# Input files or directories
-INPUT = doxygen  # Directory where your source files are located
+OUTPUT_DIRECTORY = C:/Users/HP/desktop/portfolio/portfolio/doxygen/documentation
 
-OUTPUT_DIRECTORY       = doxygen/documentation
-
+INPUT = doxygen_example.py
+FILE_PATTERNS = *.py
+RECURSIVE = NO
 
 # If the CREATE_SUBDIRS tag is set to YES then Doxygen will create up to 4096
 # sub-directories (in 2 levels) under the output directory of each output format
