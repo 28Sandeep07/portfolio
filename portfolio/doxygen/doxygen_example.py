@@ -1,13 +1,33 @@
-## \file doxygen_example.py
-#  \brief Example Python file for Doxygen.
+## @file example.py
+#  This file demonstrates the use of Doxygen for Python code.
+
+## @brief A simple example class.
 #
-#  Detailed description of the file.
+#  This class is used to illustrate how to document Python code with Doxygen.
+class Example:
+    ## @brief Initialize the Example class.
+    #
+    #  @param value The initial value for the Example instance.
+    def __init__(self, value):
+        """
+        Initialize the Example class.
+        """
+        self.value = value
 
-## \fn add(a, b)
-#  \brief Adds two numbers.
-#  \param a First number.
-#  \param b Second number.
-#  \return Sum of a and b.
+    ## @brief Get the value.
+    #
+    #  @return The current value of the instance.
+    def get_value(self):
+        """
+        Return the current value.
+        """
+        return self.value
 
-def add(a, b):
-    return a + b
+    ## @brief Set a new value.
+    #
+    #  @param new_value The new value to set.
+    def set_value(self, new_value):
+        """
+        Set a new value.
+        """
+        self.value = new_value
