@@ -3,24 +3,22 @@ name: Generate Doxygen Documentation
 on:
   push:
     branches:
-      - main  # Trigger workflow on push to main branch
+      - main
+  pull_request:
 
 jobs:
-  build-docs:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu environment
+  generate-docs:
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Check out the repository to the runner
+      uses: actions/checkout@v3
 
     - name: Set up Doxygen
-      run: sudo apt-get update && sudo apt-get install -y doxygen  # Install Doxygen
+      run: sudo apt-get install doxygen
 
-    - name: Generate Doxygen Documentation
-      run: doxygen portfolio/doxygen/Doxyfile  # Generate documentation using the Doxyfile
+    - name: Create documentation directory
+      run: mkdir -p documentation
 
-    - name: Deploy documentation to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3  # GitHub Action for deploying to GitHub Pages
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
-        publish_dir: portfolio/doxygen/documentation  # Directory where HTML documentation is generated
+    - name: Run Doxygen
+      run: doxygen portfolio/doxygen/Doxyfile
